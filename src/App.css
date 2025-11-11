@@ -1,0 +1,33 @@
+@import url("https://db.onlinewebfonts.com/c/82b778d1b069157bf6b2e32dc4e1e3f1?family=Neue+Machina");
+@font-face {
+    font-family: 'Juana';
+    src: url('/fonts/Juana.woff2') format('woff2'),
+         url('/fonts/Juana.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+ 
+  #root {
+    font-family: 'Neue Machina', sans-serif;
+    /* background-image: radial-gradient(ellipse at top right, #525252, #a3a3a3, #e5e5e5); */
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+  }
+  
+
+
+.blinking-cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: black;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}

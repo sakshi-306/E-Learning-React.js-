@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "jsx": "react-jsx",
+      "module": "esnext",
+      "allowSyntheticDefaultImports": true,
+      "moduleResolution": "node"
+    },
+    "include": ["src", "."]
+  }
+  
