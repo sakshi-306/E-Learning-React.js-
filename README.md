@@ -1,12 +1,106 @@
-# React + Vite
+# 🎓 Online Learning Platform (React + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive e-learning platform where users can browse courses and watch lessons with progressive unlocking.  
+Each course opens in a **single dynamic Course Player** that updates based on the selected course.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📚 Beautiful course browsing UI
+- 🧭 React Router based navigation
+- 🎥 Video-based course learning module
+- 🔒 Progressive video unlocking (Watch next only after completing previous)
+- 🧑‍🏫 Single **CoursePlayer** component for all courses (No code duplication)
+- 💳 Enroll Now UI designed for future payment integration
+- 🎨 Styled using **Tailwind CSS**
+- ⚡ Fast & optimized with Vite
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|-----------|---------|
+| **React.js** | Frontend UI |
+| **Vite** | Fast development server & build |
+| **Tailwind CSS** | Styling |
+| **React Router DOM** | Page Routing |
+| **Lucide React** | Icons |
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── CourseCard.jsx
+│   └── CoursePlayer.jsx
+│
+├── pages/
+│   ├── CoursesMain.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── About.jsx
+│   └── Web.jsx (Landing Page)
+│
+├── assets/
+│   └── v1.mp4 (Sample video file)
+│
+└── App.jsx
+```
+
+## 🧠 How Course Player Works
+
+Instead of making separate pages for each course (like DataScience.jsx, WebDev.jsx, etc.),  
+this project uses **one dynamic page**:
+
+```
+/course/:slug
+```
+
+- Clicking a course card sends a slug (ex: `data-science`)
+- The CoursePlayer loads correct title + video list based on slug
+- Cleaner, scalable, and easier to maintain ✅
+
+## 🔗 URL Examples
+
+| Course Name | URL Path |
+|------------|----------|
+| Data Science | `/course/data-science` |
+| Web Development | `/course/web-development` |
+| Full Stack JS | `/course/full-stack-javascript` |
+
+## ⚙️ Setup Instructions
+
+Clone the project:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Open browser at:
+
+```
+http://localhost:5173
+```
+
+## ⭐ Future Enhancements (Planned)
+
+- ✅ Save course progress in localStorage
+- ✅ Generate completion certificates
+- 🔐 Login required before watching videos
+- 💳 Payment gateway integration
+
+## 📄 License
+
+This project is **open-source** and available under the MIT License.
