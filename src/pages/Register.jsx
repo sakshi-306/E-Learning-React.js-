@@ -43,7 +43,7 @@ const Register = () => {
             type="text"
             name="name"
             className="w-full border px-3 py-2 rounded"
-            placeholder="Harshil Patel"
+            placeholder="Your Name"
             required
             value={input.name}
             onChange={inputHandler}
