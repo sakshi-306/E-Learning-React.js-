@@ -12,7 +12,7 @@ const About = () => {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">👋 About Me</h1>
           <p className="text-gray-700 text-lg leading-relaxed mb-8">
             Hello! I’m{" "}
-            <span className="font-semibold text-black">Harshil Patel</span>, a
+            <span className="font-semibold text-black">Sakshi Patil</span>, a
             passionate full-stack web developer. I love working with modern
             technologies like{" "}
             <span className="text-blue-500 font-medium">React</span>,
